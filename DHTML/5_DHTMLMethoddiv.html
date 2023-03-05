@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Creating a Div Element using JS</b> <br><br><br> 
+    <div id="container"></div>
+
+    <script>
+        var DElement=document.createElement("div");
+        var msg="Block 1";
+        DElement.innerHTML=msg;
+        DElement.setAttribute("id","sample")
+        DElement.style.border='2px solid blue';
+        DElement.style.width='150px';
+        DElement.style.height='150px';
+        DElement.style.backgroundColor='yellow'
+    
+        
+        
+        document.querySelector("#container").append(DElement);
+        console.log(DElement);
+
+       
+        var DElement=document.createElement("div");
+        var msg="Block 2";
+        DElement.innerHTML=msg;
+        DElement.setAttribute("id","sample")
+        DElement.style.border='2px solid red';
+        DElement.style.width='150px';
+        DElement.style.height='150px';
+        DElement.style.backgroundColor='blue'
+        DElement.style.marginTop='20px';
+        DElement.style.position='absolute'
+        DElement.style.left='120px'
+        DElement.style.top='100px';
+        DElement.style.opacity='0.6';
+
+        
+        document.querySelector("#container").append(DElement);
+        console.log(DElement);
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+            //creating a element from JS 
+            var msg='Helo everyone , How are you doing '
+            var spanElement=document.createElement("span");
+            spanElement.innerHTML=msg;
+            spanElement.setAttribute("id","test");
+            spanElement.setAttribute("class","sample")
+            spanElement.style.color='blue';
+            spanElement.style.border='2px solid';
+            console.log(spanElement)
+            document.querySelector("#container").append(spanElement);
+    </script>
+</body>
+</html>
